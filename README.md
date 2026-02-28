@@ -2,7 +2,7 @@
 
 ## A Complete Machine Learning Regression Project
 
- ### Project Summary
+ ### 1.Project Summary
 
 This project builds and compares multiple machine learning models to predict housing prices in California using structured tabular data.
 
@@ -10,7 +10,7 @@ The goal is to simulate a real-world scenario where a real estate company wants 
 
 Since the target variable (price) is continuous, this is a regression problem.
 
-#### Business Objective
+#### 2.Business Objective
 
 Accurate property pricing is essential in real estate:
 
@@ -24,7 +24,7 @@ This project answers:
 
 Which factors influence house prices the most, and which model predicts prices most accurately?
 
-### Dataset
+### 3.Dataset
 
 Source: sklearn.datasets.fetch_california_housing
 
@@ -44,7 +44,7 @@ Latitude & Longitude
 
 Target: Median House Value
 
-### Exploratory Data Analysis (EDA)
+### 4.Exploratory Data Analysis (EDA)
 
 EDA was conducted to:
 
@@ -58,7 +58,7 @@ Check feature distributions
 
 Analyze relationships between variables
 
-### Target Distribution
+#### 4.1 Target Distribution
 
 The price distribution was right-skewed:
 
@@ -68,7 +68,7 @@ Few high-value properties create a long right tail
 
 Skewness confirmed using .skew()
 
-### Log Transformation
+#### 4.2 Log Transformation
 
 To improve regression performance:
 
@@ -86,7 +86,7 @@ Helps linear models perform better
 
 After transformation, the distribution became more symmetric.
 
-### Feature Relationships
+#### 4.3 Feature Relationships
 Correlation Matrix
 
 Identified strong predictors (e.g., Median Income)
@@ -105,7 +105,7 @@ Target appears capped at upper values
 
 Indicates potential heteroscedasticity
 
-#### Data Splitting
+### 5.Data Splitting
 
 Dataset split into:
 
@@ -115,7 +115,7 @@ Dataset split into:
 
 This ensures model evaluation on unseen data and prevents overfitting.
 
-⚖ Feature Scaling
+### 6.Feature Scaling
 
 Applied StandardScaler for linear models:
 
@@ -130,7 +130,7 @@ Transform test data using learned parameters
 
 Prevents data leakage
 
-🤖 Models Implemented
+### 7.Models Implemented
 1️⃣ Linear Regression
 
 Baseline model.
@@ -157,7 +157,7 @@ Handles non-linearity
 
 Requires minimal preprocessing
 
-📏 Evaluation Metrics
+### 8.Evaluation Metrics
 
 Used:
 
@@ -177,7 +177,7 @@ Small gap between train and test performance
 
 Random Forest achieved the strongest overall performance.
 
-🔧 Hyperparameter Tuning
+### 9.Hyperparameter Tuning
 
 Used GridSearchCV with 5-fold cross-validation to tune:
 
@@ -187,7 +187,7 @@ max_depth
 
 This improved model stability and predictive accuracy.
 
-📊 Feature Importance
+### 10.Feature Importance
 
 Extracted from the best Random Forest model.
 
@@ -197,7 +197,7 @@ Median Income is the strongest predictor of house prices.
 
 This step bridges technical modeling with business interpretation.
 
-📌 Final Model Comparison
+### 11.Final Model Comparison
 Model	MAE	RMSE	R²
 Linear Regression			
 Ridge			
