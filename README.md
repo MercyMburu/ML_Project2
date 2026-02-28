@@ -1,8 +1,8 @@
-California Housing Price Prediction
+### California Housing Price Prediction
 
 A Complete Machine Learning Regression Project
 
-📌 Project Summary
+ Project Summary
 
 This project builds and compares multiple machine learning models to predict housing prices in California using structured tabular data.
 
