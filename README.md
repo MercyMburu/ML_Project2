@@ -1,8 +1,8 @@
-### California Housing Price Prediction
+# California Housing Price Prediction
 
-A Complete Machine Learning Regression Project
+## A Complete Machine Learning Regression Project
 
- Project Summary
+ ### Project Summary
 
 This project builds and compares multiple machine learning models to predict housing prices in California using structured tabular data.
 
@@ -10,7 +10,7 @@ The goal is to simulate a real-world scenario where a real estate company wants 
 
 Since the target variable (price) is continuous, this is a regression problem.
 
-🎯 Business Objective
+#### Business Objective
 
 Accurate property pricing is essential in real estate:
 
@@ -24,7 +24,7 @@ This project answers:
 
 Which factors influence house prices the most, and which model predicts prices most accurately?
 
-📂 Dataset
+### Dataset
 
 Source: sklearn.datasets.fetch_california_housing
 
@@ -44,7 +44,7 @@ Latitude & Longitude
 
 Target: Median House Value
 
-🔎 Exploratory Data Analysis (EDA)
+### Exploratory Data Analysis (EDA)
 
 EDA was conducted to:
 
@@ -58,7 +58,7 @@ Check feature distributions
 
 Analyze relationships between variables
 
-📊 Target Distribution
+### Target Distribution
 
 The price distribution was right-skewed:
 
@@ -68,7 +68,7 @@ Few high-value properties create a long right tail
 
 Skewness confirmed using .skew()
 
-🔄 Log Transformation
+### Log Transformation
 
 To improve regression performance:
 
@@ -86,7 +86,7 @@ Helps linear models perform better
 
 After transformation, the distribution became more symmetric.
 
-📈 Feature Relationships
+### Feature Relationships
 Correlation Matrix
 
 Identified strong predictors (e.g., Median Income)
@@ -105,7 +105,7 @@ Target appears capped at upper values
 
 Indicates potential heteroscedasticity
 
-✂ Data Splitting
+#### Data Splitting
 
 Dataset split into:
 
